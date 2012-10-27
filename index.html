@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html lang="en" ng-app>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        body {
+            font-family: sans-serif;
+        }
+        .px {
+            width: 452px;
+            height: 320px;
+            background-color: blue;
+        }
+        .px-container {
+            display: inline-block;
+            vertical-align: top;
+            margin: 50px;
+        }
+        .author {
+            margin-bottom: 5px;
+        }
+        .comment {
+            margin: 6px;
+        }
+        .comment-author {
+            font-weight: bold;
+        }
+        .comment-author:after {
+            content: ':'
+        }
+        .author-name {
+            font-variant: small-caps;
+        }
+        .avatar {
+            border-radius: 3px;
+            width: 32px;
+            vertical-align: middle;
+        }
+        .pxs {
+            white-space: nowrap;
+        }
+    </style>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.min.js"></script>
+    <script src="somepx.js" type="text/javascript"></script>
+</head>
+<body ng-controller="somepx">
+    <div class=pxs>
+        <div class="px-container" ng-repeat="px in pxs">
+            <div class="author">
+                <img src="{{px.author.avatar}}" alt="" class="avatar" />
+                <span class=author-name>{{px.author.name}}</span>
+            </div>
+            <div class="commit">
+                <span class=commit-message>{{px.commit.message}}</span>
+            </div>
+            <div class="px" style="background-color: {{px.color}}">
+            </div>
+            <div class=px-comments>
+                <div class=comment ng-repeat="comment in px.comments">
+                    <span class="comment-author">{{comment.author}}</span>
+                    <div>{{comment.message}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
