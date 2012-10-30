@@ -1,0 +1,213 @@
+body {
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+}
+.px {
+    width: 452px;
+    height: 320px;
+    background-color: white;
+}
+.px-container {
+    display: inline-block;
+    vertical-align: top;
+    margin: 50px;
+}
+.author {
+    margin-bottom: 5px;
+}
+.comment {
+    margin: 6px;
+}
+.comment-author {
+    font-weight: bold;
+}
+.comment-author:after {
+    content: ':'
+}
+.author-name {
+    font-variant: small-caps;
+}
+.avatar {
+    border-radius: 3px;
+    width: 32px;
+    vertical-align: middle;
+}
+.pxs {
+    white-space: nowrap;
+}
+
+header {
+    div {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        width: 800px;
+        h1 {
+            font-size: 32pt;
+            display: inline;
+        }
+        span {
+        }
+        a.login {
+            position: absolute;
+            right: 0;
+            bottom: 14px;
+        }
+    }
+    padding-bottom: 4px;
+    box-shadow: 0pt 10pt 16pt #eee
+}
+.px-demo {
+    border: 1pt dashed black;
+    display: inline-block;
+    position: relative;
+    padding: 0;
+
+    .px-body {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        cursor: pointer;
+    }
+}
+.px-body:hover {
+    /* IE10 Consumer Preview */ 
+    background-image: -ms-linear-gradient(bottom right, #FFBB00 0%, #A0EF02 100%);
+
+    /* Mozilla Firefox */ 
+    background-image: -moz-linear-gradient(bottom right, #FFBB00 0%, #A0EF02 100%);
+
+    /* Opera */ 
+    background-image: -o-linear-gradient(bottom right, #FFBB00 0%, #A0EF02 100%);
+
+    /* Webkit (Safari/Chrome 10) */ 
+    background-image: -webkit-gradient(linear, right bottom, left top, color-stop(0, #FFBB00), color-stop(1, #A0EF02));
+
+    /* Webkit (Chrome 11+) */ 
+    background-image: -webkit-linear-gradient(bottom right, #FFBB00 0%, #A0EF02 100%);
+
+    /* W3C Markup, IE10 Release Preview */ 
+    background-image: linear-gradient(to top left, #FFBB00 0%, #A0EF02 100%);
+
+    padding: 0;
+    .px-tag-line {
+        color: white;
+    }
+}
+.px-demo-container {
+    margin-top: 60px;
+    text-align: center;
+    margin-left: 50px;
+    position: relative;
+    overflow: hidden;
+    padding-top: 50px;
+}
+.px-demo-container-inner {
+    position: absolute;
+    top: -1px;
+    right: -562px;
+    color: #aaa;
+    .width-wise, .height-wise {
+        background-color: #aaa;
+    }
+    .px-demo {
+        border: 1pt dashed #aaa;
+        .px-tag-line {
+            color: #aaa;
+        }
+    }
+    .px-body:hover {
+        background-color: pink;
+
+        /* IE10 Consumer Preview */ 
+        background-image: -ms-linear-gradient(top left, #A38CFF 0%, #EF9BCB 100%);
+
+        /* Mozilla Firefox */ 
+        background-image: -moz-linear-gradient(top left, #A38CFF 0%, #EF9BCB 100%);
+
+        /* Opera */ 
+        background-image: -o-linear-gradient(top left, #A38CFF 0%, #EF9BCB 100%);
+
+        /* Webkit (Safari/Chrome 10) */ 
+        background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #A38CFF), color-stop(1, #EF9BCB));
+
+        /* Webkit (Chrome 11+) */ 
+        background-image: -webkit-linear-gradient(top left, #A38CFF 0%, #EF9BCB 100%);
+
+        /* W3C Markup, IE10 Release Preview */ 
+        background-image: linear-gradient(to bottom right, #A38CFF 0%, #EF9BCB 100%);
+
+        .px-tag-line {
+            color: white;
+        }
+    }
+}
+.width-wise {
+    width: 452px;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    top: -20px;
+    left: 0;
+}
+.height-wise {
+    height: 320px;
+    width: 1px;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: -20px;
+}
+.width-dimension {
+    position: relative;
+    top: -28px;
+    span {
+        background-color: white;
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+}
+.height-dimension {
+    position: relative;
+    top: 320px / 2 - 29px;
+    left: -(452px / 2) - 20px;
+    -webkit-transform: rotate(270deg);
+    span {
+        background-color: white;
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+}
+.width-left {
+    position: absolute;
+    left: -2px;
+    top: -22.4pt;
+}
+.width-right {
+    position: absolute;
+    right: -2px;
+    top: -20.9pt;
+    -webkit-transform: rotate(180deg);
+}
+.height-top {
+    position: absolute;
+    left: -23.2px;
+    top: -6px;
+    -webkit-transform: rotate(90deg);
+}
+.height-bottom {
+    position: absolute;
+    left: -25.1px;
+    bottom: -6px;
+    -webkit-transform: rotate(270deg);
+}
+.px-tag-line {
+    position: relative;
+    top: 125px;
+}
+a {
+    color: black;
+}

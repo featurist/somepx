@@ -1,65 +1,46 @@
 <!DOCTYPE HTML>
-<html lang="en" ng-app>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
-    <style type="text/css">
-        body {
-            font-family: sans-serif;
-        }
-        .px {
-            width: 452px;
-            height: 320px;
-            background-color: blue;
-        }
-        .px-container {
-            display: inline-block;
-            vertical-align: top;
-            margin: 50px;
-        }
-        .author {
-            margin-bottom: 5px;
-        }
-        .comment {
-            margin: 6px;
-        }
-        .comment-author {
-            font-weight: bold;
-        }
-        .comment-author:after {
-            content: ':'
-        }
-        .author-name {
-            font-variant: small-caps;
-        }
-        .avatar {
-            border-radius: 3px;
-            width: 32px;
-            vertical-align: middle;
-        }
-        .pxs {
-            white-space: nowrap;
-        }
-    </style>
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.min.js"></script>
-    <script src="somepx.js" type="text/javascript"></script>
+    <link rel=stylesheet href=main.css />
+    <title>somepx</title>
 </head>
-<body ng-controller="somepx">
-    <div class=pxs>
-        <div class="px-container" ng-repeat="px in pxs">
-            <div class="author">
-                <img src="{{px.author.avatar}}" alt="" class="avatar" />
-                <span class=author-name>{{px.author.name}}</span>
-            </div>
-            <div class="commit">
-                <span class=commit-message>{{px.commit.message}}</span>
-            </div>
-            <div class="px" style="background-color: {{px.color}}">
-            </div>
-            <div class=px-comments>
-                <div class=comment ng-repeat="comment in px.comments">
-                    <span class="comment-author">{{comment.author}}</span>
-                    <div>{{comment.message}}</div>
+<body>
+    <header>
+        <div>
+            <h1>some:px</h1>
+            <span>converse in px</span>
+            <a class=login href="login">login with github</a>
+        </div>
+    </header>
+    <div>
+        <div class="px-demo-container">
+            <div class="px px-demo">
+                <div class="width-wise"></div>
+                <div class="width-dimension"><span>452px</span></div>
+                <div class="height-wise"></div>
+                <div class="height-dimension"><span>320px</span></div>
+                <span class=width-left>&#9668;</span>
+                <span class=width-right>&#9668;</span>
+                <span class=height-top>&#9668;</span>
+                <span class=height-bottom>&#9668;</span>
+                <div class=px-body>
+                    <div class=px-tag-line>how are you?</div>
+                </div>
+                <div class="px-demo-container-inner">
+                    <div class="px px-demo">
+                        <div class="width-wise"></div>
+                        <div class="width-dimension"><span>452px</span></div>
+                        <div class="height-wise"></div>
+                        <div class="height-dimension"><span>320px</span></div>
+                        <span class=width-left>&#9668;</span>
+                        <span class=width-right>&#9668;</span>
+                        <span class=height-top>&#9668;</span>
+                        <span class=height-bottom>&#9668;</span>
+                        <div class=px-body>
+                            <div class=px-tag-line>fine thanks, how's the family?</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
