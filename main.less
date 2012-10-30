@@ -52,7 +52,13 @@ header {
         a.login {
             position: absolute;
             right: 0;
-            bottom: 14px;
+            bottom: 4px;
+            padding: 4px;
+            border-radius: 4pt;
+        }
+        a.login:hover {
+            background-color: grey;
+            color: white;
         }
     }
     padding-bottom: 4px;
@@ -73,7 +79,7 @@ header {
         cursor: pointer;
     }
 }
-.px-body:hover {
+.green-background {
     /* IE10 Consumer Preview */ 
     background-image: -ms-linear-gradient(bottom right, #FFBB00 0%, #A0EF02 100%);
 
@@ -91,6 +97,28 @@ header {
 
     /* W3C Markup, IE10 Release Preview */ 
     background-image: linear-gradient(to top left, #FFBB00 0%, #A0EF02 100%);
+}
+.purple-background {
+    /* IE10 Consumer Preview */ 
+    background-image: -ms-linear-gradient(top left, #A38CFF 0%, #EF9BCB 100%);
+
+    /* Mozilla Firefox */ 
+    background-image: -moz-linear-gradient(top left, #A38CFF 0%, #EF9BCB 100%);
+
+    /* Opera */ 
+    background-image: -o-linear-gradient(top left, #A38CFF 0%, #EF9BCB 100%);
+
+    /* Webkit (Safari/Chrome 10) */ 
+    background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #A38CFF), color-stop(1, #EF9BCB));
+
+    /* Webkit (Chrome 11+) */ 
+    background-image: -webkit-linear-gradient(top left, #A38CFF 0%, #EF9BCB 100%);
+
+    /* W3C Markup, IE10 Release Preview */ 
+    background-image: linear-gradient(to bottom right, #A38CFF 0%, #EF9BCB 100%);
+}
+.px-body:hover {
+    .green-background;
 
     padding: 0;
     .px-tag-line {
@@ -120,25 +148,7 @@ header {
         }
     }
     .px-body:hover {
-        background-color: pink;
-
-        /* IE10 Consumer Preview */ 
-        background-image: -ms-linear-gradient(top left, #A38CFF 0%, #EF9BCB 100%);
-
-        /* Mozilla Firefox */ 
-        background-image: -moz-linear-gradient(top left, #A38CFF 0%, #EF9BCB 100%);
-
-        /* Opera */ 
-        background-image: -o-linear-gradient(top left, #A38CFF 0%, #EF9BCB 100%);
-
-        /* Webkit (Safari/Chrome 10) */ 
-        background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #A38CFF), color-stop(1, #EF9BCB));
-
-        /* Webkit (Chrome 11+) */ 
-        background-image: -webkit-linear-gradient(top left, #A38CFF 0%, #EF9BCB 100%);
-
-        /* W3C Markup, IE10 Release Preview */ 
-        background-image: linear-gradient(to bottom right, #A38CFF 0%, #EF9BCB 100%);
+        .purple-background;
 
         .px-tag-line {
             color: white;
